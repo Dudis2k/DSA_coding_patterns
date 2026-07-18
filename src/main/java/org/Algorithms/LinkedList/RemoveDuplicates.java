@@ -1,16 +1,21 @@
-package org.example;
+package org.Algorithms.LinkedList;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
-public class Main {
+import static org.Algorithms.LinkedList.ListNode.collectElementsOfLinkedListFromUser;
+import static org.Algorithms.LinkedList.ListNode.createLinkedList;
+
+public class RemoveDuplicates {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        ListNode head = new ListNode(5);
-        head.next = new ListNode(10);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(5);
-        head.next.next.next.next = new ListNode(8);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the size of LinkedList:");
+        int len = Integer.parseInt(scanner.nextLine());
+
+        List<Integer> items = collectElementsOfLinkedListFromUser(len);
+
+        ListNode head = createLinkedList(items);
+//        ListNode head = createLinkedList(Arrays.asList(5, 10, 2, 5, 8));
         ListNode current = head;
         removeDuplicates(head);
         while (current  != null) {

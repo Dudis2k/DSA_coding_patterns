@@ -1,8 +1,6 @@
-package org.example.Two_Pointers;
+package org.Algorithms.Two_Pointers;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Next_Permutation {

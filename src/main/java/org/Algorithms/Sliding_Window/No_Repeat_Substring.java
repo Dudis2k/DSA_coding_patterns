@@ -1,4 +1,4 @@
-package org.example.Sliding_Window;
+package org.Algorithms.Sliding_Window;
 
 import java.util.HashSet;
 import java.util.Scanner;
